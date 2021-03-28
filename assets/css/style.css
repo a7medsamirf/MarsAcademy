@@ -621,15 +621,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-.dropdown .dropdown-menu .dropdown-submenu:hover a{
+.dropdown .dropdown-menu .dropdown-submenu:hover {
   color: #fff !important;
 }
+
 .dropdown .dropdown-menu .dropdown-item:hover{
   background-color: #ef4826 !important;
 }
+
 .dropdown .dropdown-menu .dropdown-item{
   padding: 0;
 }
+
 /*--------------------------------------------------
 [7. Start sidebarNavigation ]
 --------------------------------------------------*/
@@ -806,7 +809,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .popular-courses {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #f1f6ff;
 }
 
@@ -893,6 +896,72 @@ input[type=number]::-webkit-outer-spin-button {
   border: 3px dashed #f1f6ff;
   box-shadow: 0px 14px 22px -9px #bbcbd8;
 }
+
+.popular-courses .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.popular-courses .card .post-img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.popular-courses .card .post-img img {
+  transform: scale(1);
+  transition: all 1s ease-in-out 0s;
+}
+
+.popular-courses .card:hover .post-img img {
+  transform: scale(1.08);
+}
+
+.popular-courses .card .salary {
+  position: absolute;
+  top: 10px
+}
+
+.popular-courses .salary p {
+  background-color: #eb624c;
+  padding: 3px 20px;
+  color: #fff;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px
+}
+
+.popular-courses .salary .free {
+  background-color: #10c45c;
+  padding: 3px 17px;
+}
+
+.popular-courses .card-footer i {
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+.popular-courses .card-body {
+  padding: 20px 0;
+}
+
+.popular-courses .card-body p {
+  color: #9d9fa6;
+  font-size: 14px;
+  font-weight: 600
+}
+
+.popular-courses .card-body a {
+  font-size: 14px;
+  color: #456d8f;
+  font-weight: 600;
+}
+
+.popular-courses .card-footer .rating {
+  float: right;
+  color: #ef4826 !important;
+  font-size: 20px
+}
+
+
 
 /*--------------------------------------------------
 [11. Start YOU CAN LEARN  ]
@@ -1028,7 +1097,10 @@ input[type=number]::-webkit-outer-spin-button {
 #offers .sign-up .btn-primary {
   background-color: #374752;
 }
-
+#offers .timer
+{
+  color: #fff;
+}
 /*--------------------------------------------------
 [13. Start Latest News ]
 --------------------------------------------------*/
@@ -1146,7 +1218,6 @@ input[type=number]::-webkit-outer-spin-button {
   vertical-align: middle;
   height: 50px;
   border-radius: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
 #newsletter .btn-dark {
@@ -2848,7 +2919,7 @@ a.scrollToTop:hover {
 
 .team-block .inner-box .lower-content h5 a {
   position: relative;
-  color: #06092d;
+  color: #212121;
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
@@ -2862,7 +2933,7 @@ a.scrollToTop:hover {
 
 .team-block .inner-box .lower-content .designation {
   position: relative;
-  color: #06092d;
+  color: #212121;
   font-size: 16px;
   margin-top: 10px;
 }
